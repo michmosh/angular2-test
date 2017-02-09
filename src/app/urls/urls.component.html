@@ -1,0 +1,6 @@
+<ul>
+	<li *ngFor=" let url of urls_list" ><a href="#" (mouseover)="getQrCode(url)">{{url.title}}</a></li>
+	<div *ngIf="src">
+		<img style="-webkit-user-select: none" src={{src}}>
+	</div>
+</ul>
